@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>GPai Auto App</title>
+    <style>
+        body { font-family: Arial; padding: 20px; background: #f5f5f5; }
+        h1 { color: #333; }
+        button {
+            padding: 12px 20px;
+            font-size: 18px;
+            border: none;
+            background: #4CAF50;
+            color: white;
+            border-radius: 6px;
+        }
+    </style>
+</head>
+<body>
+    <h1>GPai Auto App</h1>
+    <p>This app runs simple automated tasks 24/7 on any free cloud host.</p>
+
+    <button onclick="start()">Start Auto-Run</button>
+
+    <script>
+        function start() {
+            alert("Auto system started — running background tasks!");
+            console.log("Running tasks...");
+            setInterval(() => {
+                console.log("Task executed at " + new Date());
+            }, 5000);
+        }
+    </script>
+</body>
+</html>
